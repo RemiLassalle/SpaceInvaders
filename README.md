@@ -21,3 +21,7 @@ Projet SpaceInvaders
 ### Diagramme de classes
 
 ![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/images/Semaine2.gif)
+
+### Nuage de mots du projet spaceinvaders (séance n°2):
+
+![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/images/NdmS2.png)
