@@ -20,4 +20,4 @@ Projet SpaceInvaders
   
 ### Diagramme de classes
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/Semaine2.gif)
