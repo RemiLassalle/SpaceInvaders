@@ -20,4 +20,4 @@ Projet SpaceInvaders
   
 ### Diagramme de classes
 
-Semaine2.gif
+
