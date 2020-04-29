@@ -25,3 +25,36 @@ Projet SpaceInvaders
 ### Nuage de mots du projet spaceinvaders (séance n°2):
 
 ![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS2.png)
+
+## Semaine n°3: du 13 au 18 Avril
+### Sprints et fonctionnalités réalisées
+#### Fonctionnalité n°3: Choisir la vitesse du vaisseau 
+
+* Story n°1 : Ajouter la vitesse au Vaisseau sans régression de comportement <br>
+  Ici nous avons ajouter un attribut (vitesse) à une classe (vaisseau) déjà existante.
+  
+* Story n°2 : Régler la vitesse du vaisseau <br>
+  Cette story permet de régler la vitesse du vaisseau (pour une donnée précise).
+  
+* Story n°3 : Faire en sorte que le déplacement se fasse correctement pour une vitesse quelconque <br>
+  Ici nous avons fait des tests de déplacements vers la droite avec une certaine vitesse puis phase de refactoring. Même étape mais vers la gauche.
+  
+* Story n°4 : Et bien, jouons maintenant ! <br>
+  Modification de la classe SpaceInvaders pour qu'elle prenne en compte la vitesse.
+  
+### Diagramme de classes
+
+![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/Semaine%203.gif)
+
+### Nuage de mots du projet spaceinvaders (séance n°3):
+
+![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS3.png)
+
+### Glossaire
+
+* Vitesse: définie comme un vecteur obtenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
+
+Ainsi dans un espace à deux dimensions, comme celui l'espace de jeu de Space Invaders, la vitesse d'un objet peut-être définie par un vecteur v à 2 dimensions (dx et dy) où :
+
+dx correspond au déplacement (c-a-d à un nombre de pixels pour le projet SpaceInvaders) effectué en 1 unité de temps sur l'axe des abscisses
+dy correspondra au déplacement (c-a-d à un nombre de pixels pour le projet SpaceInvaders) effectué en 1 unité de temps sur l'axe des ordonnées.
