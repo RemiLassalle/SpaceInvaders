@@ -58,3 +58,35 @@ Ainsi dans un espace à deux dimensions, comme celui l'espace de jeu de Space In
 
 dx correspond au déplacement (c-a-d à un nombre de pixels pour le projet SpaceInvaders) effectué en 1 unité de temps sur l'axe des abscisses
 dy correspondra au déplacement (c-a-d à un nombre de pixels pour le projet SpaceInvaders) effectué en 1 unité de temps sur l'axe des ordonnées.
+
+## Semaine n°4: du 4 au 8 Mai
+### Sprints et fonctionnalités réalisées
+#### Fonctionnalité n°4: Tirer un missile depuis le vaisseau
+
+* Story n°1 : Comprendre ce qu'est un missile et refactorer <br>
+  Définition de certains termes puis refactoring, ajout d'une classe Sprite.
+  
+  
+* Story n°2 : Comprendre ce que signifie tirer un missile depuis le vaisseau <br>
+  Définition de ce qu'est un missile.
+  
+  
+* Story n°3 : Tirer un missile <br>
+  Mise en place de la fonctionnalité pour tirer un missile puis refactoring en faisant attention à l'espace de jeu!
+  
+  
+* Story n°4 : Et bien, jouons maintenant ! <br>
+  Ajustement des différentes touches nécessaire pour jouer puis ajustement des règles concernant les missiles.
+  
+  
+* Story n°5 : Faire déplacer le missile à la verticale de manière autonome <br>
+  Mise en place d'une classe Direction ajustant les missiles, puis refactoring afin que le missile puisse se déplacer dans le jeu.
+### Diagramme de classes
+
+![Diagramme de classe]()
+
+### Nuage de mots du projet spaceinvaders (séance n°3):
+
+![Nuage de mots]()
+
+
