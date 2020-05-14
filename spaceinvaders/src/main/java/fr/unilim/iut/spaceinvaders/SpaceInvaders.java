@@ -1,13 +1,17 @@
 package fr.unilim.iut.spaceinvaders;
 
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
+import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
+import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
+import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
 
-public class SpaceInvaders {
+public class SpaceInvaders implements Jeu{
 	 int longueur;
 	 int hauteur;
 	 Vaisseau vaisseau;
+	 Missile missile;
 	 
 	 public class Constante {
 
@@ -17,16 +21,44 @@ public class SpaceInvaders {
 		   public static final int VAISSEAU_LONGUEUR = 30;
 		   public static final int VAISSEAU_HAUTEUR = 20;
 		   public static final int VAISSEAU_VITESSE = 5;
-		
-		   public static final char MARQUE_FIN_LIGNE = '\n';
-		   public static final char MARQUE_VIDE = '.';
-		   public static final char MARQUE_VAISSEAU = 'V';
 	   }
 
+	 public void initialiserJeu() {
+			Position positionVaisseau = new Position(this.longueur/2,this.hauteur-1);
+			Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
+			positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
+		 }
+
+	 @Override
+     public void evoluer(Commande commandeUser) {
+		
+        if (commandeUser.gauche) {
+            deplacerVaisseauVersLaGauche();
+        }
+		
+       if (commandeUser.droite) {
+	        deplacerVaisseauVersLaDroite();
+       }
+
+     }
+
+ 
+    @Override
+    public boolean etreFini() {
+       return false; 
+    }
 	    public SpaceInvaders(int longueur, int hauteur) {
 		   this.longueur = longueur;
 		   this.hauteur = hauteur;
 	   }
+	 
+	    public Vaisseau recupererVaisseau() {
+			return this.vaisseau;
+		}
+	    
+	    public Missile recupererMissile() {
+			return this.missile;
+		}
 	    
 	    
 	    public void deplacerVaisseauVersLaDroite() {
@@ -60,7 +92,7 @@ public class SpaceInvaders {
 				for (int x = 0; x < longueur; x++) {
 					espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
 				}
-				espaceDeJeu.append(Constante.MARQUE_FIN_LIGNE);
+				espaceDeJeu.append(fr.unilim.iut.spaceinvaders.Constante.MARQUE_FIN_LIGNE);
 			}
 			return espaceDeJeu.toString();
 		}
@@ -68,17 +100,26 @@ public class SpaceInvaders {
 		private char recupererMarqueDeLaPosition(int x, int y) {
 			char marque;
 			if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
-			      marque= Constante.MARQUE_VAISSEAU;
-			else
-			      marque='.';
+				marque = fr.unilim.iut.spaceinvaders.Constante.MARQUE_VAISSEAU;
+			else if (this.aUnMissileQuiOccupeLaPosition(x, y))
+					marque = fr.unilim.iut.spaceinvaders.Constante.MARQUE_MISSILE;
+			else marque = fr.unilim.iut.spaceinvaders.Constante.MARQUE_VIDE;
 			return marque;
+		}
+		
+		private boolean aUnMissileQuiOccupeLaPosition(int x, int y) {
+	        return this.aUnmissile() && missile.occupeLaPosition(x, y);
+	    }
+		
+		public boolean aUnmissile() {
+			return missile!=null;
 		}
 
 		private boolean aUnVaisseauQuiOccupeLaPosition(int x, int y) {
 			return this.aUnvaisseau() && vaisseau.occupeLaPosition(x, y);
 		}
 
-		private boolean aUnvaisseau() {
+		public boolean aUnvaisseau() {
 			return vaisseau!=null;
 		}
 
@@ -101,12 +142,15 @@ public class SpaceInvaders {
 			vaisseau = new Vaisseau(dimension,position,vitesse);
 
 		}
-		
-		public void initialiserJeu() {
-			Position positionVaisseau = new Position(this.longueur/2,this.hauteur-1);
-			Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
-			positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
-		 }
-		
+	
+		    
+		public void tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+			
+			   if ((vaisseau.hauteur()+ dimensionMissile.hauteur()) > this.hauteur )
+				   throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
+								
+			   this.missile = this.vaisseau.tirerUnMissile(dimensionMissile,vitesseMissile);
+	       }
+
 		
 }
