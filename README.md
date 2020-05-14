@@ -83,10 +83,10 @@ dy correspondra au déplacement (c-a-d à un nombre de pixels pour le projet Spa
   Mise en place d'une classe Direction ajustant les missiles, puis refactoring afin que le missile puisse se déplacer dans le jeu.
 ### Diagramme de classes
 
-![Diagramme de classe]()
+![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/Semaine4.gif)
 
 ### Nuage de mots du projet spaceinvaders (séance n°3):
 
-![Nuage de mots]()
+![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS4.png)
 
 
