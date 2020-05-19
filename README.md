@@ -112,7 +112,7 @@ dy correspondra au déplacement (c-a-d à un nombre de pixels pour le projet Spa
 
 ![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/Semaine5.gif)
 
-### Nuage de mots du projet spaceinvaders (séance n°4):
+### Nuage de mots du projet spaceinvaders (séance n°5):
 
 ![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS5.png)
 
