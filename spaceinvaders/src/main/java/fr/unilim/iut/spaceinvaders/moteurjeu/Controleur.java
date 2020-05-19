@@ -100,5 +100,4 @@ public class Controleur implements KeyListener {
 	public void keyTyped(KeyEvent e) {
 
 	}
-
 }
