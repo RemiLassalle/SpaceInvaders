@@ -251,5 +251,4 @@ public class SpaceInvaders implements Jeu {
 		}
 
 	}
-
 }
