@@ -6,5 +6,4 @@ public class Missile extends Sprite {
 		super(dimension, origine, vitesse);
 		
 	}
-	
 }
