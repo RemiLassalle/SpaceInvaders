@@ -35,5 +35,4 @@ public class Commande {
 		this.droite=commandeACopier.droite;
 		this.tir=commandeACopier.tir;
 	}
-	
 }
