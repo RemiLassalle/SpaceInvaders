@@ -8,5 +8,4 @@ public class Envahisseur extends Sprite {
 		super(dimension, positionOrigine, vitesse);
 		this.direction = Direction.GAUCHE;
 	}
-
 }
