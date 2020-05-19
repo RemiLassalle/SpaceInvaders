@@ -83,5 +83,4 @@ public class PanelDessin extends JPanel {
 		g.drawImage(this.imageEnCours, 0, 0, getWidth(), getHeight(), 0, 0,
 				getWidth(), getHeight(), null);
 	}
-
 }
