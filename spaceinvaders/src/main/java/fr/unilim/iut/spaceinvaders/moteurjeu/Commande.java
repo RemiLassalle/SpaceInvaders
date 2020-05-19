@@ -32,7 +32,8 @@ public class Commande {
 		this.bas=commandeACopier.bas;
 		this.haut=commandeACopier.haut;
 		this.gauche=commandeACopier.gauche;
-		this.droite=commandeACopier.droite;		
+		this.droite=commandeACopier.droite;
+		this.tir=commandeACopier.tir;
 	}
 	
 }

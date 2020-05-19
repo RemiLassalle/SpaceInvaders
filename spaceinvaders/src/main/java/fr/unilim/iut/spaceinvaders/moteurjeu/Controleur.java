@@ -45,7 +45,7 @@ public class Controleur implements KeyListener {
 	/**
 	 * met a jour les commandes en fonctions des touches appuyees
 	 */
-	public void keyPressed(KeyEvent e) {
+    public void keyPressed(KeyEvent e) {
 
 		switch (e.getKeyCode()) {
 		case KeyEvent.VK_LEFT:
@@ -65,8 +65,8 @@ public class Controleur implements KeyListener {
 			this.commandeARetourner.bas = true;
 			break;
 		case KeyEvent.VK_SPACE:
-			this.commandeEnCours.tir = false;
-			break;
+			this.commandeEnCours.tir = true;
+			this.commandeARetourner.tir = true;
 		default:
 			break;
 		}
@@ -93,7 +93,6 @@ public class Controleur implements KeyListener {
 		default: break;
 		}
 	}
-
 	@Override
 	/**
 	 * ne fait rien
