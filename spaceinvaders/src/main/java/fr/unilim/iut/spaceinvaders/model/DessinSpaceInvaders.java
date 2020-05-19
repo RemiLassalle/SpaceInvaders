@@ -60,6 +60,7 @@ public class DessinSpaceInvaders implements DessinJeu {
 				missile.dimension.hauteur);
 	}
 
+	
 	private void dessinerUnEnvahisseur(Envahisseur envahisseur, BufferedImage im) {
 		Graphics2D crayon = (Graphics2D) im.getGraphics();
 
