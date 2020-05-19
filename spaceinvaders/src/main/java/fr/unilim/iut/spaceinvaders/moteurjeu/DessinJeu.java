@@ -17,5 +17,4 @@ public interface DessinJeu {
 	 *            image sur laquelle dessiner
 	 */
 	public abstract void dessiner(BufferedImage image);
-
 }
