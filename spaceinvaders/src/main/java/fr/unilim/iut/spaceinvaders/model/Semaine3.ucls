@@ -84,6 +84,7 @@
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  
   <association id="11">    
     <end type="SOURCE" refId="7" navigable="false">      
       <attribute id="12" name="spaceinvaders">        
