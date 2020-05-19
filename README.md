@@ -85,8 +85,35 @@ dy correspondra au déplacement (c-a-d à un nombre de pixels pour le projet Spa
 
 ![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/Semaine4.gif)
 
-### Nuage de mots du projet spaceinvaders (séance n°3):
+### Nuage de mots du projet spaceinvaders (séance n°4):
 
 ![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS4.png)
+
+## Semaine n°5: du 11 au 15 Mai
+### Sprints et fonctionnalités réalisées
+#### Fonctionnalité n°5: Ajouter un envahisseur dans le jeu 
+
+* Story n°1 : Refactoring <br>
+ Changement de package pour de nombreuses classes.
+  
+
+* Story n°2 : Envahisseur <br>
+  Création d'une nouvelle classe "Envahisseur".
+  
+  
+* Story n°3 : Déplacements <br>
+  Faire déplacer l'envahisseur en prenant en compte l'environnement.
+  
+  
+* Story n°4 : Et bien, jouons maintenant ! <br>
+  L'envahisseur se déplace parfaitement de gauche à droite!
+  
+### Diagramme de classes
+
+![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/Semaine5.gif)
+
+### Nuage de mots du projet spaceinvaders (séance n°4):
+
+![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS5.png)
 
 
