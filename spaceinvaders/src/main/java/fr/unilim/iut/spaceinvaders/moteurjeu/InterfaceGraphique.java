@@ -65,5 +65,4 @@ public class InterfaceGraphique  {
 	public void dessiner() {
 		this.panel.dessinerJeu();	
 	}
-	
 }
