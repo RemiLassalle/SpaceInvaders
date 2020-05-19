@@ -58,5 +58,4 @@ public class MoteurGraphique {
 			Thread.sleep(100);
 		}
 	}
-
 }
