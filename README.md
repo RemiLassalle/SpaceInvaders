@@ -116,4 +116,29 @@ dy correspondra au déplacement (c-a-d à un nombre de pixels pour le projet Spa
 
 ![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS5.png)
 
+## Semaine n°6: du 18 au 22 Mai
+### Sprints et fonctionnalités réalisées
+#### Fonctionnalité n°6: Détecter une collision entre deux sprites 
+
+* Story n°1 : Création <br>
+ Création d'un nouvelle classe "Collision" qui prendra en charge les cas de collisions entre deux sprites. 
+  
+
+* Story n°2 : Les collisions <br>
+  Détection des éventuelles collisions entre un missile et un envahisseur.
+
+
+* Story n°3 : Et bien, jouons maintenant ! <br>
+  Les différentes collisions sont maintenant gérées par le code!
+  
+### Diagramme de classes
+
+![Diagramme de classe](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/Semaine6.gif)
+
+### Nuage de mots du projet spaceinvaders (séance n°5):
+
+![Nuage de mots](https://github.com/RemiLassalle/SpaceInvaders/blob/master/spaceinvaders/images/NdmS6.png)
+
+
+
 
